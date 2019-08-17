@@ -27,12 +27,13 @@
 				<li ng-repeat="x in listitem">
 					{{x}}
 					&nbsp&nbsp&nbsp
+					<i class='multiple' id="{{'product' + $index}}" ></i>
 					<button class='btn btn-danger' ng-click="removeItem($index)">Remove</button>
 				</li>
 			</ol>
 			<div id="bigdiv">
 				<div class="totaldiv">
-					<h2 class="h2">Total = Rs.<span id="total"></span></h2>
+					<h2 class="h2">Total = Rs.<span id="total">{{total}}</span></h2>
 				</div>
 			</div>
 		</div>
